@@ -62,10 +62,10 @@ public class ValidAVLTreeTester {
             isNodeValid(node.getRight());
         }
         if (node.getRight().getParent() != node){
-            System.out.println("ERROR: The right son of node " + node.getKey() + " points to " + node.getRight().getParent().getKey() + " instead");
+            System.out.println("ERROR: The right son of node " + node.getKey() + " points to " + node.getRight().getParent().getKey() + " as its parent instead");
         }
         if (node.getLeft().getParent() != node){
-            System.out.println("ERROR: The left son of node " + node.getKey() + " points to " + node.getLeft().getParent().getKey() + " instead");
+            System.out.println("ERROR: The left son of node " + node.getKey() + " points to " + node.getLeft().getParent().getKey() + " as its parent instead");
         }
         int rankLeft = node.getHeight() - node.getLeft().getHeight();
         int rankRight = node.getHeight() - node.getRight().getHeight();
